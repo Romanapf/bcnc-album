@@ -36,9 +36,9 @@ export const PhotoItem = ({
         transition={{ duration: 0.05, delay: 0.1 }}
         onClick={handleOpen}
         data-testid='photo-item'
-        className='flex items-center justify-between gap-2 md:justify-around border-t-[0.5px] border-[rgba(255,255,255,0.2)]  py-10'
+        className='flex flex-col sm:flex-row items-center justify-between gap-2  border-t-[0.5px] border-[rgba(255,255,255,0.2)]  py-10'
       >
-        <div className='flex items-center text-gray-300 gap-3 md:gap-8 lg:w-2/3'>
+        <div className='flex flex-col sm:flex-row items-center text-gray-300 gap-3 md:gap-8 mb-4'>
           <div className='h-24 w-32 relative cursor-pointer'>
             <Image
               blurDataURL='/blur-placeholder.png'
@@ -51,20 +51,23 @@ export const PhotoItem = ({
               fill
             />
           </div>
-
-          <p className='line-clamp-2 text-sm md:text-base'>{title}</p>
-        </div>
-        <div className='flex flex-col text-xs md:text-sm'>
-          <p className='p-0.5 bg-gray-400 text-black text-xs rounded-sm mb-4'>
-            Photo ID
+          <p className='line-clamp-2 text-center md:text-left max-w-[400px]'>
+            {title}
           </p>
-          <p>{photoId}</p>
         </div>
-        <div className='flex flex-col text-xs md:text-md'>
-          <p className='p-0.5 bg-gray-400 text-black text-xs rounded-sm mb-4'>
-            Album ID
-          </p>
-          <p>{albumId}</p>
+        <div className='flex items-center justify-center gap-4'>
+          <div className='flex sm:flex-col gap-1 text-xs md:text-sm'>
+            <p className='p-0.5 bg-gray-400 text-black text-xs rounded-sm md:mb-4'>
+              Photo ID
+            </p>
+            <p>{photoId}</p>
+          </div>
+          <div className='flex sm:flex-col gap-1 text-xs md:text-sm'>
+            <p className='p-0.5 bg-gray-400 text-black text-xs rounded-sm md:mb-4'>
+              Album ID
+            </p>
+            <p>{albumId}</p>
+          </div>
         </div>
       </motion.div>
       {showModal && (
