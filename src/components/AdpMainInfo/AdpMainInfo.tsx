@@ -10,7 +10,7 @@ const AdpMainInfo = ({
 }) => {
   return (
     <div data-testid='adp-main-info'>
-      <div className='h-80 w-full relative mb-8'>
+      <div className='h-60 md:h-80 w-full relative mb-8'>
         <Image
           src={img}
           alt={title}

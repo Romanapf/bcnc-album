@@ -6,7 +6,9 @@ export default async function Home() {
 
   return (
     <main className='flex min-h-screen flex-col items-center justify-between'>
-      <h1 className='text-4xl mb-20'>📸 Welcome to PhotoAlbum</h1>
+      <h1 className='text-3xl mb-10 md:text-4xl md:mb-20'>
+        📸 Welcome to PhotoAlbum
+      </h1>
       <section className='w-full border-t pt-10'>
         <AlbumCardGrid albums={albums} />
       </section>

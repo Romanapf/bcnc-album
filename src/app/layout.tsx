@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${inter.className} container mx-auto py-20 bg-black text-white`}
+        className={`${inter.className} container mx-auto py-10 md:py-20 bg-black text-white`}
       >
         {children}
         <div id='modal'></div>
