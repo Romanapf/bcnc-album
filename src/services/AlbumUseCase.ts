@@ -20,5 +20,9 @@ export async function getAllAlbums(): Promise<Album[]> {
 
 export async function getAlbumById(id: number): Promise<Album | null> {
   const album = await getAlbumByIdFromApi(id)
-  return album
+  const photos = await getPhotosByAlbumIdFromApi(id)
+
+  if (!album) return null
+
+  return { ...album, photos }
 }
