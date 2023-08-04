@@ -17,6 +17,8 @@ const AdpMainInfo = ({
           style={{
             objectFit: 'cover',
           }}
+          placeholder='blur'
+          blurDataURL='/blur-placeholder.jpg'
           fill
         />
       </div>

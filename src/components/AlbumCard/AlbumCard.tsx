@@ -18,10 +18,11 @@ const AlbumCard = ({ album }: AlbumCardProps) => {
     <Link
       data-testid='album-card'
       href={`/album/${album.id}`}
-      className='col-span-full md:col-span-6 lg:col-span-4  rounded-lg  bg-[rgba(255,255,255,0.1)] backdrop-filter backdrop-blur-lg p-4 flex flex-col items-center justify-center mb-28'
+      className='relative col-span-full md:col-span-6 lg:col-span-4  rounded-lg  bg-[rgba(255,255,255,0.1)] backdrop-filter backdrop-blur-lg p-4 flex flex-col items-center justify-center mb-28'
     >
       <div className='w-48 h-48 absolute overflow-hidden rounded-full -top-[96px]'>
         <Image
+          placeholder='blur'
           blurDataURL='/blur-placeholder.jpg'
           src={thumbnailUrl}
           alt={album.title}

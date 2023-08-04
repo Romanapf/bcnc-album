@@ -20,6 +20,7 @@ export default function RootLayout({
         className={`${inter.className} container mx-auto py-20 bg-black text-white`}
       >
         {children}
+        <div id='modal'></div>
       </body>
     </html>
   )
