@@ -1,12 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## BCNC Album
+
+Este es el repositorio para el proyecto BCNC Album.
 
 See the [live demo](https://bcnc-album.vercel.app).
 
-## Getting Started
+## Descripción
 
-First, run the development server:
+BCNC Album es una aplicación de álbum de fotos desarrollada utilizando tecnologías web modernas.
+
+
+## Inicio rápido
+
+1. Clona este repositorio a tu máquina local.
+
+2. Asegúrate de tener Node.js instalado.
+
+3. Abre una terminal en el directorio raíz del repositorio y ejecuta el siguiente comando para instalar las dependencias:
 
 ```bash
+npm install
+# or
+yarn add
+# or
+pnpm install
+```
+
+4. Una vez completada la instalación, puedes iniciar el servidor de desarrollo con el siguiente comando:
+
+ ```bash
 npm run dev
 # or
 yarn dev
@@ -14,23 +35,35 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Abre tu navegador y navega a http://localhost:3000 para ver la aplicación en acción.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Scripts disponibles
 
-To learn more about Next.js, take a look at the following resources:
+En el directorio del proyecto, puedes ejecutar:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### `npm run dev` 
+Inicia el servidor de desarrollo.
+### `npm run build`
+npm run build: Compila la aplicación para producción.
+### `npm run start`
+npm start: Inicia la aplicación en un entorno de producción.
+### `npm run lint`
+npm run lint: Ejecuta el linter para detectar problemas de código.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### `npm test`
+npm test: Ejecuta las pruebas utilizando Jest.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tecnologías Principales
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* React
+* Next.js
+* Tailwind CSS
+* Framer Motion
+* Lodash
+
+## Licencia
+
+MIT
